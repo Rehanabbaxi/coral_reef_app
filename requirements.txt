@@ -1,5 +1,2 @@
-clarifai==9.11.1
-flask
+clarifai-grpc
 streamlit
-flask-cors
-python-dotenv
