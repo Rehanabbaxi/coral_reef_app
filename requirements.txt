@@ -1,0 +1,5 @@
+clarifai==9.11.1
+flask
+streamlit
+flask-cors
+python-dotenv
