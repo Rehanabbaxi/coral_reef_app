@@ -32,17 +32,16 @@ Underwater images are vital in marine research, aquatic habitat inspection, and 
 
 2- Coral Reef Classification & Analysis :  Deployed cutting-edge machine learning models to classify coral reefs and deliver detailed insights into their health conditions, empowering informed conservation decisions In a commitment to advancing marine preservation.
 """)
-    with st.expander("Block Diagram of underwater image Enhacement process"):
+    with st.expander("Block Diagrams"):
         st.image('images/block_diagram.png', use_column_width=True)
+        st.image('images/block_diagram_1.png', use_column_width=True)
 
-    with st.expander("Enhanced Image Results "):
+    with st.expander("Results"):
         st.image('images/streamlit_resluts_imgs/result_img1.png', use_column_width=True)
         st.image('images/streamlit_resluts_imgs/result_img2.png', use_column_width=True)
     with st.expander("Team Members"):
         st.write("""Rehan Ahmed""")
-
-os.environ["CLARIFAI_PAT"] = "d20110c6efc4488f9fa804dcb9f44fff"
-
+        
 ### clarifai image_classifie####r 
 def classify_image(file_bytes, pat, user_id, app_id, model_id, model_version_id):
     channel = ClarifaiChannel.get_grpc_channel()
